@@ -1,6 +1,10 @@
+import sys
 import signal
 from gpiozero import Button,LED
 from datetime import datetime
+
+#  sys.stdout.reconfigure(encoding='utf-8')
+
 
 def user_release():
     print("使用者按下放開")
