@@ -15,7 +15,7 @@ print(redis_conn.ping())
 def on_message(mosq, obj, msg):
     topic = msg.topic
     message = msg.payload.decode('utf-8')
-    #redis_conn.rpush(topic,message)
+    redis_conn.rpush(topic,message)
     #render_redis_conn.rpush(topic,message)
     print(f"topic={topic},message:{message}")
 
