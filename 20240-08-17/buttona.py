@@ -4,7 +4,7 @@ from gpiozero import Button,LED
 import paho.mqtt.publish as publish
 from datetime import datetime
 
-# sys.stdout.reconfigure(encoding='utf-8')
+sys.stdout.reconfigure(encoding='utf-8')
 
 
 def user_release():
@@ -17,7 +17,7 @@ def user_release():
         message="燈是開的"
         print(message)   
             # publish a single message
-        publish.single('topic=501教室/監視器-1', payload=message, hostname='127.0.0.1',qos=2)  
+        publish.single(topic='501教室/監視器-1', payload=message, hostname='127.0.0.1',qos=2)  
     else:
 
         message="燈是關的"        
