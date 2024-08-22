@@ -15,19 +15,19 @@ def user_release():
     print(now_str)
     if led.is_lit:
         #message="燈是開的"
-        message = '''{
+        message = f'''{{
             "status":true,
-            "date":"2024/08/17 16:18:12",
-            "topic":"501教室/老師桌燈"}''' 
+            "date":{now_str},
+            "topic":"501教室/老師桌燈"}}''' 
         print(message)               
         publish.single(topic='501教室/老師桌燈', payload=message, hostname='127.0.0.1',qos=2)  
     else:
 
         #message="燈是關的" 
-        message = '''{
+        message = f'''{{
             "status":false,
-            "date":"2024/08/17 16:18:12",
-            "topic":"501教室/老師桌燈"}''' 
+            "date":{now_str},
+            "topic":"501教室/老師桌燈"}}''' 
         
         print(message)
         publish.single(topic='501教室/老師桌燈', payload=message, hostname='127.0.0.1',qos=2) 
