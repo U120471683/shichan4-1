@@ -23,5 +23,5 @@ if __name__ == '__main__':
     client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
     client.on_message = on_message
     client.connect('127.0.0.1')
-    client.subscribe('501教室/監視器-1',qos=2)
+    client.subscribe('501教室/老師桌燈',qos=2)
     client.loop_forever()
