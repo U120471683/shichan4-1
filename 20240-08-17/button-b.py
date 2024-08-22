@@ -14,23 +14,21 @@ def user_release():
     now_str = now.strftime('%Y-%m-%d %H:%M:%S')
     print(now_str)
     if led.is_lit:
-        message="燈是開的"
-        #message='''{
-        #    "status":true,
-        #    "date":"2024/08/17 14:32:00",
-        #    "topic":"501教室/老師桌燈是開的"
-        #}'''
-        print(message)   
-            # publish a single message
+        #message="燈是開的"
+        message = '''{
+            "status":true,
+            "date":"2024/08/17 16:18:12",
+            "topic":"501教室/老師桌燈"}''' 
+        print(message)               
         publish.single(topic='501教室/老師桌燈', payload=message, hostname='127.0.0.1',qos=2)  
     else:
 
-        message="燈是關的"  
-        #message='''{
-        #    "status":false,
-        #    "date":"2024/08/17 14:32:00",
-        #    "topic":"501教室/老師桌燈是關的"
-        # }'''    
+        #message="燈是關的" 
+        message = '''{
+            "status":false,
+            "date":"2024/08/17 16:18:12",
+            "topic":"501教室/老師桌燈"}''' 
+        
         print(message)
         publish.single(topic='501教室/老師桌燈', payload=message, hostname='127.0.0.1',qos=2) 
 
