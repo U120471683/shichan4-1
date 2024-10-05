@@ -1,1 +1,10 @@
-redis
+#REDIS 資料庫伺服資料庫伺服器
+REDIS
+# GPIO套件
+RPi.GPIO
+lgpio
+gpiozero
+# MQTT伺服器
+paho-mqtt 
+# 模擬環境變數
+python-dotenv  
