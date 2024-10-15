@@ -1,3 +1,5 @@
+#自訂的模組，提供了兩個函式，created_log_file()和record_info()，
+
 # file.py 是一個模組，提供了兩個函式，created_log_file()和record_info()，
 # created_log_file()用來建立log檔，record_info()用來寫入log檔。這個模組
 # 可以被其他程式引用，這樣就可以重複使用這兩個函式。這個模組的好處是，可以

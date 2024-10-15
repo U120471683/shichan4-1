@@ -1,3 +1,5 @@
+
+#呼叫file.py檔案的主程式，並執行函式
 # -*- coding: utf-8 -*-
 
 from datetime import datetime
