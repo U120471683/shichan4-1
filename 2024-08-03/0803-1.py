@@ -1,12 +1,12 @@
 
 # -*- coding: utf-8 -*-
 import sys
-
 sys.stdout.reconfigure(encoding='utf-8')
 import os.path
 import os
 from datetime import datetime
 import random
+
 
 current_path = os.path.abspath(__name__) #取得目前檔案路徑
 directory_name = os.path.dirname(current_path) #取得目前資料夾路行
