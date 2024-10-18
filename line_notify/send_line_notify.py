@@ -22,10 +22,12 @@ def send_line_notify(token, message):
 
 if __name__ == "__main__":
     # 你的 LINE Notify 存取權杖
-    token = "FXVGdF2ffKqt85EWiSPGctGfLAIpzWBzyEseo18L4r3EN"
-    
+    token = "tMTmF09DnksmtiklPhl7pY5KMTYNAJXYxh55gFUwURh"
+            #FXVGdF2ffKqt85EWiSPGctGfLAIpzWBzyEseo18L4r3   
     # 要發送的訊息
-    message = "Hello from LINE Notify!"
+    message = "Hello from 慧續有限公司 (0932-000000)!"
+    #message = "Hello ! Line Notify !"
+    #message = "電動機發生故障! 請派員到縣常檢修"
     
     # 呼叫函式並取得回應
     status_code, response_text = send_line_notify(token, message)
